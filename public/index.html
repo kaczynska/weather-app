@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
+	<!-- <link href="/your-path-to-fontawesome/css/solid.css" rel="stylesheet"> -->
+	<script src="https://kit.fontawesome.com/7e30ba5c3b.js"></script>
+	<script defer type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1I3VWq5Uz18txOZjT9XbBvmGwG9cKTB4&libraries=places"></script>
+	<script defer type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.min.js"></script>
+	<script defer type="text/javascript" src="scripts.js"></script>
+	<title>Weather App</title>
+</head>
+<body>
+	<div class="container">
+		<div class="header">
+			<canvas id='icon' width="32px" height="32px"></canvas>
+			<div class="location" data-location>Location</div>
+		</div>
+		<div class="content">
+			<div class="temperature" data-temperature>Enter the location</div>
+			<div class="icon-container" data-status>to find the weather</div>
+		</div>
+		<div class="details-section">
+			<div class="detail bordered">
+				<div class="icon"><i class="fas fa-wind"></i></div>
+				<div class="value" data-wind>?</div>
+			</div>
+			<div class="detail">
+				<div class="icon"><i class="fas fa-cloud-rain"></i></div>
+				<div class="value" data-precipitation>?</div>
+			</div>
+		</div>
+		<div class="city-search-container">
+			<span class="fas fa-search"></span>
+			<input type="text" class="city-search" name="city-search" data-city-search placeholder="Enter Location">
+		</div>
+	</div>
+	<a href="https://darksky.net/poweredby" class="darksky-logo">Powered By Dark Sky</a>
+</body>
+</html>
